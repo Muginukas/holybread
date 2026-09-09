@@ -1,0 +1,430 @@
+/* Šventos virtuvės stilius: pergamentas, alyvuogės, kviečiai. */
+
+:root {
+  --bg: #f6f0e2;
+  --bg-alt: #efe6d2;
+  --surface: #fffaf0;
+  --ink: #2f2a20;
+  --ink-soft: #6b6151;
+  --line: #ddd0b4;
+  --olive: #5f7345;
+  --olive-dark: #46562f;
+  --wine: #7a2f36;
+  --gold: #b8892b;
+  --shadow: 0 2px 10px rgba(70, 55, 25, .09);
+  --radius: 14px;
+  --serif: Georgia, "Times New Roman", "Palatino Linotype", serif;
+  --sans: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #191713;
+    --bg-alt: #211e18;
+    --surface: #262218;
+    --ink: #ece3d0;
+    --ink-soft: #b3a891;
+    --line: #3d3629;
+    --olive: #9bb072;
+    --olive-dark: #b6c98f;
+    --wine: #d78e93;
+    --gold: #e0b355;
+    --shadow: 0 2px 12px rgba(0, 0, 0, .4);
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+a { color: var(--olive-dark); }
+
+.wrap {
+  width: min(1180px, 92vw);
+  margin: 0 auto;
+}
+
+/* ------------------------------- Antraštė ------------------------------ */
+.site-header {
+  background:
+    radial-gradient(circle at 15% 0%, rgba(184, 137, 43, .18), transparent 55%),
+    var(--bg-alt);
+  border-bottom: 1px solid var(--line);
+  padding: 56px 0 44px;
+  text-align: center;
+}
+
+.site-header .mark { font-size: 42px; line-height: 1; }
+
+.site-header h1 {
+  font-family: var(--serif);
+  font-size: clamp(30px, 5.2vw, 52px);
+  margin: 12px 0 6px;
+  letter-spacing: -.5px;
+}
+
+.site-header .lead {
+  max-width: 62ch;
+  margin: 0 auto;
+  color: var(--ink-soft);
+  font-size: clamp(16px, 2vw, 19px);
+}
+
+.verse-banner {
+  margin: 26px auto 0;
+  max-width: 66ch;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--ink);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 10px;
+}
+
+.verse-banner cite {
+  display: block;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 8px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  justify-content: center;
+  margin-top: 26px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.stats b {
+  display: block;
+  font-family: var(--serif);
+  font-size: 26px;
+  color: var(--olive-dark);
+}
+
+/* -------------------------------- Sekcijos ----------------------------- */
+section { padding: 46px 0; }
+
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(24px, 3.4vw, 34px);
+  margin: 0 0 6px;
+}
+
+.section-sub {
+  color: var(--ink-soft);
+  margin: 0 0 26px;
+  max-width: 70ch;
+}
+
+/* ------------------------------ Principai ------------------------------ */
+#principai { background: var(--bg-alt); border-block: 1px solid var(--line); }
+
+.principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.principle {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  box-shadow: var(--shadow);
+}
+
+.principle h3 {
+  font-family: var(--serif);
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.principle p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+
+.principle .ref {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ------------------------------ Valdikliai ----------------------------- */
+.controls {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 0;
+}
+
+.controls-inner { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+
+#search {
+  flex: 1 1 240px;
+  min-width: 200px;
+  padding: 11px 14px;
+  font: inherit;
+  font-size: 16px;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+#search:focus { outline: 2px solid var(--olive); outline-offset: 1px; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.chip {
+  font: inherit;
+  font-size: 14px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.chip:hover { border-color: var(--olive); }
+
+.chip[aria-pressed="true"] {
+  background: var(--olive);
+  border-color: var(--olive);
+  color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .chip[aria-pressed="true"] { color: #17150f; }
+}
+
+.result-count { font-size: 14px; color: var(--ink-soft); margin-left: auto; }
+
+/* -------------------------------- Kortelės ----------------------------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: transform .15s ease, border-color .15s ease;
+}
+
+.card:hover { transform: translateY(-3px); border-color: var(--olive); }
+.card:focus-visible { outline: 2px solid var(--olive); outline-offset: 2px; }
+
+.card .cat {
+  font-size: 12px;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--olive-dark);
+}
+
+.card h3 { font-family: var(--serif); font-size: 21px; margin: 8px 0 6px; }
+
+.card .ref { font-size: 13px; color: var(--gold); font-style: italic; }
+
+.card .verse {
+  font-family: var(--serif);
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin: 12px 0 16px;
+  border-left: 3px solid var(--line);
+  padding-left: 12px;
+}
+
+.card .meta {
+  margin-top: auto;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+
+.tag {
+  font-size: 12px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+}
+
+.empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 50px 0;
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-size: 20px;
+}
+
+/* -------------------------------- Meniu -------------------------------- */
+#meniu { background: var(--bg-alt); border-block: 1px solid var(--line); }
+
+.week {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.day {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+.day h3 {
+  font-family: var(--serif);
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: var(--olive-dark);
+}
+
+.day ul { margin: 0; padding-left: 18px; font-size: 15px; color: var(--ink-soft); }
+.day li { margin-bottom: 6px; }
+
+/* ------------------------------- Modalas ------------------------------- */
+dialog#recipe {
+  width: min(760px, 94vw);
+  max-height: 88vh;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
+}
+
+dialog#recipe::backdrop { background: rgba(30, 24, 12, .6); }
+
+.modal-body { padding: 30px 34px 36px; overflow-y: auto; max-height: 88vh; }
+
+.modal-close {
+  position: sticky;
+  top: 0;
+  float: right;
+  font-size: 24px;
+  line-height: 1;
+  background: none;
+  border: none;
+  color: var(--ink-soft);
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.modal-body h2 { font-family: var(--serif); font-size: 30px; margin: 0 0 4px; }
+
+.modal-body blockquote {
+  font-family: var(--serif);
+  font-style: italic;
+  border-left: 3px solid var(--gold);
+  margin: 18px 0;
+  padding: 4px 0 4px 16px;
+  color: var(--ink-soft);
+}
+
+.modal-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  font-size: 14px;
+  color: var(--ink-soft);
+  border-block: 1px solid var(--line);
+  padding: 12px 0;
+  margin: 18px 0;
+}
+
+.modal-body h4 {
+  font-family: var(--serif);
+  font-size: 19px;
+  margin: 24px 0 10px;
+  color: var(--olive-dark);
+}
+
+.modal-body ul, .modal-body ol { padding-left: 22px; margin: 0; }
+.modal-body li { margin-bottom: 7px; }
+
+.callout {
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.callout strong { color: var(--olive-dark); }
+
+.modal-actions { margin-top: 26px; display: flex; gap: 10px; flex-wrap: wrap; }
+
+.btn {
+  font: inherit;
+  font-size: 15px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--olive);
+  background: var(--olive);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn:hover { filter: brightness(1.06); }
+
+@media (prefers-color-scheme: dark) { .btn { color: #17150f; } }
+
+/* ------------------------------- Poraštė ------------------------------- */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 34px 0 50px;
+  font-size: 14px;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+.site-footer p { max-width: 70ch; margin: 0 auto 10px; }
+
+/* -------------------------------- Spauda ------------------------------- */
+@media print {
+  .controls, .site-header .stats, #meniu, .site-footer, .modal-actions, .modal-close { display: none; }
+  body { background: #fff; color: #000; font-size: 12pt; }
+  .card { break-inside: avoid; box-shadow: none; }
+  dialog#recipe { position: static; display: block; border: none; max-height: none; }
+}

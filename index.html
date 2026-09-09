@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Šventoji virtuvė — Biblijos patiekalų receptynas</title>
+<meta name="description" content="Visi Biblijoje minimi patiekalai viename receptyne: Ezekielio duona, maca, Ezavo lęšiai, Danieliaus daržovės, figų pyragaičiai ir dešimtys kitų receptų su Šventojo Rašto nuorodomis.">
+<meta property="og:title" content="Šventoji virtuvė — Biblijos patiekalų receptynas">
+<meta property="og:description" content="Subalansuota Biblijos virtuvė: duona, troškiniai, žuvis, pieno gėrybės, vaisiai ir prieskoniai su eilučių nuorodomis.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="mark">🌾🍯🐟</div>
+    <h1>Šventoji virtuvė</h1>
+    <p class="lead">
+      Biblijos patiekalų receptynas — nuo Ezekielio duonos iki Pesacho avinėlio.
+      Kiekvienas receptas turi Šventojo Rašto nuorodą, tikslias proporcijas ir paaiškinimą,
+      kodėl toks derinys yra maistiniu požiūriu subalansuotas.
+    </p>
+    <blockquote class="verse-banner">
+      „Imk kviečių, miežių, pupelių, lęšių, sorų ir spelta kviečių, sudėk juos į vieną indą
+      ir pasidaryk iš jų duonos.“
+      <cite>Ezechielio 4:9</cite>
+    </blockquote>
+    <div class="stats">
+      <div><b id="stat-recipes">—</b> receptų</div>
+      <div><b id="stat-cats">—</b> kategorijos</div>
+      <div><b id="stat-books">—</b> Biblijos knygų</div>
+      <div><b>3000+</b> metų tradicijos</div>
+    </div>
+  </div>
+</header>
+
+<section id="principai">
+  <div class="wrap">
+    <h2 class="section-title">Šventos virtuvės principai</h2>
+    <p class="section-sub">
+      Prieš imantis receptų verta žinoti taisykles, pagal kurias šis stalas buvo dengiamas tūkstančius metų.
+    </p>
+    <div class="principles">
+      <article class="principle">
+        <h3>Septyni krašto vaisiai</h3>
+        <p>Kviečiai, miežiai, vynuogės, figos, granatai, alyvuogės ir datulių medus. Tai bazė:
+           grūdai duoda energiją, alyvuogės – riebalus, vaisiai – vitaminus.</p>
+        <span class="ref">Pak. Įst. 8:8</span>
+      </article>
+      <article class="principle">
+        <h3>Augalai pirma, mėsa – per šventes</h3>
+        <p>Kasdienis stalas buvo duona, ankštiniai ir daržovės. Mėsa pasirodydavo per šventes
+           ar svečių sutikimą – todėl porcijos savaime lieka saikingos.</p>
+        <span class="ref">Pr 1:29; Pr 18:7</span>
+      </article>
+      <article class="principle">
+        <h3>Kraujo nevalgoma</h3>
+        <p>Mėsa nuleidžiama nuo kraujo ir gerai iškepama. Praktinė higienos taisyklė,
+           tapusi religiniu įstatymu.</p>
+        <span class="ref">Kun 17:10–14</span>
+      </article>
+      <article class="principle">
+        <h3>Švarūs ir nešvarūs gyvūnai</h3>
+        <p>Valgomi atrajotojai su skeltomis kanopomis ir žuvys su pelekais bei žvynais.
+           Kiauliena, vėžiagyviai ir plėšrūnai – ne.</p>
+        <span class="ref">Kun 11</span>
+      </article>
+      <article class="principle">
+        <h3>Pienas ir mėsa neverdami kartu</h3>
+        <p>„Nevirk ožiuko jo motinos piene“ – iš čia kilo visa kašruto virtuvės atskyrimo tvarka.</p>
+        <span class="ref">Iš 23:19</span>
+      </article>
+      <article class="principle">
+        <h3>Poilsio diena ir pasninkas</h3>
+        <p>Šeštadienį maistas ruošiamas iš anksto, o pasninkas (pvz., Danieliaus dešimt dienų)
+           yra reguliari pertrauka virškinimui.</p>
+        <span class="ref">Iš 16:23; Dan 1:12</span>
+      </article>
+      <article class="principle">
+        <h3>Duona laužoma dalijantis</h3>
+        <p>Valgis prasideda padėka ir baigiasi dalijimusi. Svečias prie stalo – ne prievolė,
+           o palaiminimas.</p>
+        <span class="ref">Pr 18:1–8; Lk 24:30</span>
+      </article>
+      <article class="principle">
+        <h3>Saikas svarbiau už sotumą</h3>
+        <p>„Radai medaus – valgyk tik tiek, kiek reikia, kad neapsirytum.“ Net leistinas maistas
+           be saiko kenkia.</p>
+        <span class="ref">Pat 25:16</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="controls">
+  <div class="wrap controls-inner">
+    <input id="search" type="search" placeholder="Ieškok recepto, produkto ar eilutės…" aria-label="Paieška receptyne">
+    <div class="chips" id="cat-chips" role="group" aria-label="Kategorijos"></div>
+    <span class="result-count" id="count"></span>
+  </div>
+</div>
+
+<section id="receptai">
+  <div class="wrap">
+    <h2 class="section-title">Receptai</h2>
+    <p class="section-sub">
+      Spustelėk kortelę – atsivers pilnas receptas su produktų sąrašu, eiga ir maistinės pusiausvyros paaiškinimu.
+    </p>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="meniu">
+  <div class="wrap">
+    <h2 class="section-title">Subalansuota savaitė</h2>
+    <p class="section-sub">
+      Pavyzdinis septynių dienų meniu iš šio receptyno: grūdai kiekvieną dieną, ankštiniai keturis kartus,
+      žuvis du kartus, mėsa – vieną, per šventinę vakarienę.
+    </p>
+    <div class="week" id="week"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>
+      <strong>Šventoji virtuvė</strong> — Biblijos patiekalų receptynas. Receptai yra šiuolaikinės
+      rekonstrukcijos pagal Šventojo Rašto minimus produktus ir Artimųjų Rytų virtuvės tradicijas;
+      eilutės pateikiamos sutrumpintai, perpasakojant prasmę.
+    </p>
+    <p>
+      Tekstai apie maistingumą yra bendro pobūdžio informacija, o ne gydymo ar mitybos gydymo rekomendacija.
+      Sergant ar laikantis specialios dietos pasitark su gydytoju.
+    </p>
+    <p>🌾 „Ne vien duona gyvas žmogus.“ — Pak. Įst. 8:3</p>
+  </div>
+</footer>
+
+<dialog id="recipe" aria-label="Recepto langas">
+  <div class="modal-body" id="modal-body"></div>
+</dialog>
+
+<script src="assets/js/recipes.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
