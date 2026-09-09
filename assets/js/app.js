@@ -12,6 +12,11 @@
 
   let activeCategory = "visi";
 
+  /* Adreso juostos nuoroda; smėlio dėžėje gali būti neleidžiama – tyliai praleidžiam. */
+  function setUrl(value) {
+    try { history.replaceState(null, "", value); } catch (e) { /* ignoruojam */ }
+  }
+
   const catName = (id) => (CATEGORIES.find((c) => c.id === id) || {}).name || id;
   const catIcon = (id) => (CATEGORIES.find((c) => c.id === id) || {}).icon || "🍽";
 
@@ -115,13 +120,13 @@
     if (typeof dialog.showModal === "function") dialog.showModal();
     else dialog.setAttribute("open", "");
     modalBody.scrollTop = 0;
-    history.replaceState(null, "", "#" + r.id);
+    setUrl("#" + r.id);
   }
 
   function closeRecipe() {
     if (typeof dialog.close === "function") dialog.close();
     else dialog.removeAttribute("open");
-    history.replaceState(null, "", location.pathname + location.search);
+    setUrl(location.pathname + location.search);
   }
 
   /* ---------------------------- Savaitės meniu -------------------------- */
@@ -170,7 +175,7 @@
   });
 
   dialog.addEventListener("close", () => {
-    if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+    if (location.hash) setUrl(location.pathname + location.search);
   });
 
   let timer;
