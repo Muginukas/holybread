@@ -7,6 +7,7 @@
 
 const CATEGORIES = [
   { id: "duona", name: "Duona ir grūdai", icon: "🌾" },
+  { id: "blynai", name: "Blynai ir keptuvės papločiai", icon: "🥞" },
   { id: "troskiniai", name: "Sriubos ir troškiniai", icon: "🍲" },
   { id: "darzoves", name: "Daržovės ir salotos", icon: "🥬" },
   { id: "zuvis-mesa", name: "Žuvis ir mėsa", icon: "🐟" },
@@ -1102,5 +1103,1222 @@ const RECIPES = [
     ],
     balance: "Alyvuogių aliejus prie duonos yra pagrindinis Viduržemio jūros mitybos riebalų šaltinis, siejamas su sveikesne širdimi.",
     note: "Šventasis patepimo aliejus buvo skirtas tik šventyklai. Šis – kasdienis stalo variantas, tik su tais pačiais kvapais."
+  },
+
+  /* --------------------- BLYNAI IR KEPTUVĖS PAPLOČIAI -------------------- */
+  {
+    id: "tamaros-blynai",
+    title: "Tamaros blynai (levivot)",
+    category: "blynai",
+    scripture: "2 Samuelio 13:6–8",
+    verse: "Teateina mano sesuo Tamara ir tepakepa mano akivaizdoje porą blynų, kad valgyčiau iš jos rankos.",
+    time: "35 min.",
+    servings: "10 blynų",
+    difficulty: "Lengvas",
+    tags: ["blynai", "keptuvėje", "ligoniui", "saldu"],
+    ingredients: [
+      "250 g smulkių kvietinių miltų",
+      "200 ml šilto vandens arba pieno",
+      "1 kiaušinis (arba 2 v. š. sumaltų linų sėmenų su 6 v. š. vandens)",
+      "2 v. š. medaus",
+      "1 žiupsnis druskos",
+      "1/2 a. š. cinamono",
+      "Alyvuogių aliejaus kepimui",
+      "Datulių medaus ir sezamo patiekimui"
+    ],
+    steps: [
+      "Miltus sumaišyk su druska ir cinamonu.",
+      "Įplak kiaušinį, medų ir vandenį – tešla turi būti kaip tiršta grietinė.",
+      "Palik pastovėti 15 min., kad miltai išbrinktų.",
+      "Įkaitink keptuvę su plonu aliejaus sluoksniu, šaukštu dėk blynus.",
+      "Kepk po 2 min. iš kiekvienos pusės, kol kraštai auksiniai.",
+      "Patiek karštus, apšlakstytus datulių medumi ir pabarstytus sezamu."
+    ],
+    balance: "Skystos tešlos blynai virškinami lengviau nei kepalas duonos – todėl Biblijoje jie ruošiami ligoniui. Su pienu ar kiaušiniu gaunamas pilnavertis baltymas.",
+    note: "Hebrajiškas žodis „levivot“ reiškia būtent keptuvėje keptus papločius. Tai vienintelis Biblijos pasakojimas, kur maistas gaminamas ligonio akivaizdoje."
+  },
+  {
+    id: "manu-blynai",
+    title: "Manų blyneliai keptuvėje",
+    category: "blynai",
+    scripture: "Skaičių 11:8",
+    verse: "Žmonės vaikščiojo aplink ir rinkdavo maną, mala ją girnomis ar grūsdavo grūstuvėje, virdavo puode ir kepdavo iš jos papločius.",
+    time: "25 min.",
+    servings: "12 blynelių",
+    difficulty: "Lengvas",
+    tags: ["blynai", "greita", "vaikams", "pusryčiai"],
+    ingredients: [
+      "200 g manų kruopų",
+      "300 ml pieno arba migdolų gėrimo",
+      "2 kiaušiniai",
+      "2 v. š. alyvuogių aliejaus",
+      "1 a. š. maltos kalendros",
+      "1 žiupsnis druskos",
+      "2 v. š. medaus"
+    ],
+    steps: [
+      "Manų kruopas užpilk pienu ir palik 20 min. brinkti – masė sutirštės.",
+      "Įmaišyk kiaušinius, medų, kalendrą ir druską.",
+      "Įkaitink keptuvę su aliejumi.",
+      "Dėk po šaukštą masės, kepk po 2–3 min. iš kiekvienos pusės ant vidutinės ugnies.",
+      "Patiek su medumi arba šviežiomis uogomis."
+    ],
+    balance: "Manų kruopos – lėtai atpalaiduojami angliavandeniai; su pienu ir kiaušiniu blyneliai sotina iki pietų be papildomo užkandžiavimo.",
+    note: "Eilutė aprašo visą maisto grandinę: rinkti, malti, virti, kepti. Mana nebuvo stebuklingas patiekalas – ją dar reikėjo paruošti."
+  },
+  {
+    id: "efraimo-paplotis",
+    title: "Neapverstas Efraimo paplotis",
+    category: "blynai",
+    scripture: "Ozėjo 7:8",
+    verse: "Efraimas tapo paplotėliu, neapverstu ant kitos pusės.",
+    time: "30 min.",
+    servings: "8 papločiai",
+    difficulty: "Vidutinis",
+    tags: ["blynai", "keptuvėje", "raugintas", "veganiška"],
+    ingredients: [
+      "250 g kvietinių miltų",
+      "50 g miežinių miltų",
+      "400 ml drungno vandens",
+      "5 g sausų mielių",
+      "1 a. š. druskos",
+      "1/2 a. š. sodos",
+      "1 v. š. alyvuogių aliejaus"
+    ],
+    steps: [
+      "Miltus, mieles ir vandenį suplak į skystą tešlą, palik šiltai 1 val. – paviršius turi pradėti burbuliuoti.",
+      "Įmaišyk druską ir sodą, ištirpintą šaukšte vandens.",
+      "Įkaitink keptuvę, patepk aliejumi, supilk samtelį tešlos.",
+      "Kepk tik iš vienos pusės 4–5 min., kol viršus išsipūs skylutėmis ir sustings – neapversk!",
+      "Patiek skylėta puse į viršų, kad į ją įsigertų medus ar aliejus."
+    ],
+    balance: "Rauginta tešla lengviau virškinama, o vienpusis kepimas palieka poringą paviršių, sugeriantį padažą – todėl reikia mažiau riebalų.",
+    note: "Pranašas šiuo vaizdiniu pašiepia pusiau atliktą darbą: iš vienos pusės sudegęs, iš kitos – žalias. Virtuvėje tai daroma sąmoningai ir išeina skanu."
+  },
+  {
+    id: "keptuves-atnasa",
+    title: "Keptuvės atnaša (machavat)",
+    category: "blynai",
+    scripture: "Kunigų 2:5–6",
+    verse: "Jei tavo atnaša – keptuvėje kepta duona, tebūna ji iš smulkių miltų, sumaišytų su aliejumi, nerauginta. Sulaužyk ją gabalais ir užpilk aliejaus.",
+    time: "30 min.",
+    servings: "8 papločiai",
+    difficulty: "Lengvas",
+    tags: ["blynai", "be mielių", "veganiška", "apeiginė"],
+    ingredients: [
+      "300 g smulkių miltų",
+      "180 ml vandens",
+      "60 ml alyvuogių aliejaus į tešlą",
+      "1 a. š. druskos",
+      "3 v. š. alyvuogių aliejaus užpylimui",
+      "1 a. š. smulkintų isopo lapelių"
+    ],
+    steps: [
+      "Miltus sumaišyk su druska ir aliejumi, trink pirštais, kol pasidarys trupiniai.",
+      "Įpilk vandenį ir suminkyk tvirtą tešlą, palik 15 min.",
+      "Padalyk į 8 dalis, iškočiok 4 mm storio papločius.",
+      "Kepk sausoje ketaus keptuvėje po 2 min. iš kiekvienos pusės.",
+      "Sulaužyk gabalais, dėk į dubenį, užpilk aliejaus ir pabarstyk isopu."
+    ],
+    balance: "Aliejus tešloje ir ant paviršiaus – riebaluose tirpstančių vitaminų (A, D, E, K) nešiklis; be jų daržovių maistinės medžiagos pasisavinamos prasčiau.",
+    note: "Kunigų knyga skiria tris kepimo būdus: orkaitėje, atviroje keptuvėje (machavat) ir gilioje keptuvėje (marchešet). Tai seniausias žinomas kulinarinės technikos sąrašas."
+  },
+  {
+    id: "padekos-blynai",
+    title: "Padėkos aukos blynai su aliejumi",
+    category: "blynai",
+    scripture: "Kunigų 7:12",
+    verse: "Tegul aukoja su padėkos auka neraugintus papločius, sumaišytus su aliejumi, ir neraugintus blynus, pateptus aliejumi.",
+    time: "40 min.",
+    servings: "10 blynų",
+    difficulty: "Lengvas",
+    tags: ["blynai", "be mielių", "šventinė", "veganiška"],
+    ingredients: [
+      "250 g spelta miltų",
+      "50 g sumaltų migdolų",
+      "300 ml vandens",
+      "3 v. š. alyvuogių aliejaus",
+      "1 v. š. medaus",
+      "1 a. š. druskos",
+      "1 a. š. sezamo sėklų"
+    ],
+    steps: [
+      "Sumaišyk miltus, migdolus ir druską.",
+      "Įpilk vandenį, aliejų ir medų, išplak iki vientisos skystos tešlos.",
+      "Palik 20 min. – spelta miltams reikia laiko išbrinkti.",
+      "Kepk plonus blynus įkaitintoje keptuvėje po 2 min. iš kiekvienos pusės.",
+      "Iškeptus patepk aliejumi ir pabarstyk sezamu, sukrauk vieną ant kito."
+    ],
+    balance: "Migdolų miltai prideda baltymų ir vitamino E, todėl blynai neturi vien krakmolo poveikio cukraus kiekiui kraujyje.",
+    note: "Padėkos auka buvo vienintelė, kurią reikėjo suvalgyti tą pačią dieną – ji buvo skirta dalytis su visais namiškiais ir svečiais."
+  },
+  {
+    id: "sareptos-paplotelis",
+    title: "Sareptos našlės paplotėlis",
+    category: "blynai",
+    scripture: "1 Karalių 17:12–16",
+    verse: "Turiu tik saują miltų statinaitėje ir truputį aliejaus ąsotyje. Miltai statinaitėje nesibaigė ir aliejaus ąsotyje nepritrūko.",
+    time: "20 min.",
+    servings: "4 paplotėliai",
+    difficulty: "Lengvas",
+    tags: ["blynai", "trys produktai", "veganiška", "greita"],
+    ingredients: [
+      "200 g miltų",
+      "120 ml vandens",
+      "3 v. š. alyvuogių aliejaus",
+      "1/2 a. š. druskos"
+    ],
+    steps: [
+      "Sumaišyk miltus su druska.",
+      "Įpilk aliejų ir vandenį, minkyk 5 min.",
+      "Padalyk į 4 dalis, iškočiok plonai.",
+      "Kepk įkaitintoje keptuvėje po 2 min. iš kiekvienos pusės.",
+      "Valgyk karštą – tokį, kokį našlė atnešė pranašui."
+    ],
+    balance: "Trys produktai, visa dienos energija: apie 250 kcal viename paplotėlyje, pusė jų – iš alyvuogių aliejaus riebalų.",
+    note: "Pasakojimas apie paskutinę saują miltų, kurios užteko ilgiau, nei atrodė įmanoma. Receptas tinka, kai atrodo, kad virtuvėje nieko nėra."
+  },
+  {
+    id: "mieziniai-blynai",
+    title: "Miežiniai blynai ant žarijų",
+    category: "blynai",
+    scripture: "Ezechielio 4:12",
+    verse: "Valgyk juos kaip miežinį paplotėlį, iškeptą žmonių akivaizdoje.",
+    time: "30 min.",
+    servings: "8 blynai",
+    difficulty: "Lengvas",
+    tags: ["blynai", "pilno grūdo", "ant laužo", "veganiška"],
+    ingredients: [
+      "200 g miežinių miltų",
+      "100 g kvietinių miltų",
+      "350 ml vandens",
+      "1 a. š. druskos",
+      "1 v. š. medaus",
+      "2 v. š. alyvuogių aliejaus"
+    ],
+    steps: [
+      "Miltus sumaišyk su druska, įpilk vandenį ir medų, išplak be gumulėlių.",
+      "Palik 15 min. pastovėti.",
+      "Laužo žarijose įkaitink ketaus keptuvę arba plokščią akmenį.",
+      "Patepk aliejumi, pilk po samtelį tešlos.",
+      "Kepk po 3 min. iš kiekvienos pusės, kol pakraščiai atšoks."
+    ],
+    balance: "Miežių beta gliukanai mažina cholesterolio įsisavinimą ir ilgai laiko sotumo jausmą – geriausias grūdas ilgai dienai.",
+    note: "Pranašui tai buvo ženklo valgis apgulties metu: kuklus, pilkas, kepamas viešai. Šiandien miežiniai blynai – delikatesas."
+  },
+  {
+    id: "varskes-blyneliai",
+    title: "Varškės blyneliai su datulių medumi",
+    category: "blynai",
+    scripture: "2 Samuelio 17:29",
+    verse: "Jie atnešė Dovydui ir jo žmonėms medaus, sviesto, avių ir sūrio iš karvių pieno.",
+    time: "30 min.",
+    servings: "12 blynelių",
+    difficulty: "Lengvas",
+    tags: ["blynai", "pieniška", "baltyminga", "vaikams"],
+    ingredients: [
+      "400 g varškės arba nuvarvinto jogurto",
+      "2 kiaušiniai",
+      "100 g spelta miltų",
+      "2 v. š. medaus",
+      "1 žiupsnis druskos",
+      "1/2 a. š. cinamono",
+      "Alyvuogių aliejaus kepimui",
+      "Datulių medaus ir graikinių riešutų patiekimui"
+    ],
+    steps: [
+      "Varškę sutrink šakute su kiaušiniais ir medumi.",
+      "Įmaišyk miltus, druską ir cinamoną – masė turi būti tiršta, bet minkšta.",
+      "Šlapiomis rankomis formuok nedidelius blynelius.",
+      "Kepk įkaitintoje keptuvėje su aliejumi po 3 min. iš kiekvienos pusės ant vidutinės ugnies.",
+      "Patiek su datulių medumi ir kapotais riešutais."
+    ],
+    balance: "Apie 20 g baltymo porcijoje – sotūs pusryčiai be didelio angliavandenių kiekio; kalcis iš varškės pasisavinamas kartu su riebalais.",
+    note: "Kai Dovydas bėgo nuo sūnaus, kaimynai atnešė būtent tokį maistą: sūrio, sviesto ir medaus. Paprasta, kaloringa, greitai atgaivina."
+  },
+  {
+    id: "avinzirniu-blyneliai",
+    title: "Avinžirnių blyneliai (be glitimo)",
+    category: "blynai",
+    scripture: "2 Samuelio 17:28",
+    verse: "Atnešė guolių, dubenų ir molinių indų, kviečių, miežių, miltų, skrudintų grūdų, pupelių, lęšių ir kepintų žirnių.",
+    time: "25 min. + 2 val. brinkimo",
+    servings: "8 blyneliai",
+    difficulty: "Lengvas",
+    tags: ["blynai", "be glitimo", "veganiška", "baltyminga"],
+    ingredients: [
+      "200 g avinžirnių miltų",
+      "350 ml vandens",
+      "3 v. š. alyvuogių aliejaus",
+      "1 a. š. druskos",
+      "1 a. š. kmynų",
+      "1/2 a. š. maltos kalendros",
+      "1 sauja kapotų petražolių"
+    ],
+    steps: [
+      "Avinžirnių miltus išplak su vandeniu ir palik 2 val. – kartumas pranyks, tešla taps švelni.",
+      "Nugriebk putas nuo paviršiaus, įmaišyk druską, prieskonius, aliejų ir petražoles.",
+      "Įkaitink keptuvę iki karštumo.",
+      "Pilk ploną sluoksnį tešlos, kepk 4 min., kol kraštai atšoka, apversk ir kepk dar 2 min.",
+      "Patiek su tahini padažu arba jogurtu."
+    ],
+    balance: "Avinžirnių miltuose – apie 20 g baltymo ir 10 g skaidulų 100 gramų. Blyneliai tinka nevalgantiems glitimo ir sotina kaip mėsos patiekalas.",
+    note: "Kepinti žirniai ir pupelės Dovydo stovykloje buvo kareivių maistas – tas pats produktas, tik sumaltas, tinka ir blyneliams."
+  },
+  /* --------------------- DESERTAI (VAISIAI IR SALDUMYNAI) ---------------- */
+  {
+    id: "keptos-figos",
+    title: "Keptos figos su medumi ir riešutais",
+    category: "saldumynai",
+    scripture: "Giesmių giesmė 2:13",
+    verse: "Figmedis nokina savo vaisius, vynmedžiai žydi ir kvepia.",
+    time: "25 min.",
+    servings: "4 porcijos",
+    difficulty: "Lengvas",
+    tags: ["desertas", "greita", "be cukraus", "vegetariška"],
+    ingredients: [
+      "12 šviežių figų",
+      "3 v. š. medaus",
+      "60 g graikinių riešutų",
+      "1 a. š. cinamono",
+      "2 v. š. alyvuogių aliejaus",
+      "200 g graikiško jogurto",
+      "Mėtų lapelių"
+    ],
+    steps: [
+      "Figas perpjauk kryžmai iki pusės, kad atsivertų kaip gėlė.",
+      "Sudėk į kepimo indą, apšlakstyk aliejumi ir medumi, pabarstyk cinamonu.",
+      "Kepk 200 °C 15 min., kol kraštai pradės karamelizuotis.",
+      "Riešutus paskrudink sausoje keptuvėje 4 min. ir sukapok.",
+      "Patiek šiltas figas su šaltu jogurtu, riešutais ir mėta."
+    ],
+    balance: "Karštas vaisius su šaltu rūgpieniu: figų skaidulos ir jogurto baltymas kartu neleidžia cukrui greitai pakilti.",
+    note: "Figmedis Biblijoje – ramybės ženklas: „kiekvienas sėdės po savo vynmedžiu ir figmedžiu“ (Mch 4:4)."
+  },
+  {
+    id: "datuliu-rutuliukai",
+    title: "Datulių, sezamo ir tahini rutuliukai",
+    category: "saldumynai",
+    scripture: "Pakartoto Įstatymo 8:8",
+    verse: "Kraštas alyvmedžių ir medaus.",
+    time: "20 min.",
+    servings: "20 rutuliukų",
+    difficulty: "Lengvas",
+    tags: ["desertas", "be kepimo", "veganiška", "kelionei"],
+    ingredients: [
+      "300 g datulių be kauliukų",
+      "3 v. š. tahini (sezamo sviesto)",
+      "80 g sezamo sėklų",
+      "60 g migdolų",
+      "1/2 a. š. kardamono",
+      "1 žiupsnis druskos",
+      "1 a. š. citrinos žievelės"
+    ],
+    steps: [
+      "Sezamą paskrudink sausoje keptuvėje 3 min., pusę palik apvoliojimui.",
+      "Datules sumalk smulkintuvu su tahini iki tirštos masės.",
+      "Įmaišyk kapotus migdolus, pusę sezamo, kardamoną, druską ir žievelę.",
+      "Suformuok riešuto dydžio rutuliukus.",
+      "Apvoliok likusiame sezame, laikyk šaldytuve iki 2 savaičių."
+    ],
+    balance: "Sezamas – vienas geriausių augalinių kalcio šaltinių (apie 900 mg 100 g); su datulėmis gaunama kalio ir geležies.",
+    note: "Sezamo sėklų aliejus Artimuosiuose Rytuose spaudžiamas nuo bronzos amžiaus – seniau nei alyvuogių."
+  },
+  {
+    id: "medaus-migdolu-pyragas",
+    title: "Medaus ir migdolų pyragas",
+    category: "saldumynai",
+    scripture: "Pradžios 43:11",
+    verse: "Įdėkite į indus geriausių krašto vaisių ir nuneškite tam žmogui dovanų: truputį balzamo, truputį medaus, kvepalų, riešutų ir migdolų.",
+    time: "1 val.",
+    servings: "12 gabaliukų",
+    difficulty: "Vidutinis",
+    tags: ["desertas", "šventinė", "be rafinuoto cukraus"],
+    ingredients: [
+      "200 g maltų migdolų",
+      "120 g spelta miltų",
+      "180 g medaus",
+      "3 kiaušiniai",
+      "100 ml alyvuogių aliejaus",
+      "1 a. š. kepimo miltelių",
+      "1 apelsino žievelė ir 3 v. š. sulčių",
+      "1 a. š. cinamono",
+      "50 g migdolų drožlių viršui"
+    ],
+    steps: [
+      "Kiaušinius išplak su medumi 4 min., kol masė pašviesės.",
+      "Plakant supilk aliejų plona srovele.",
+      "Įmaišyk migdolus, miltus, kepimo miltelius, cinamoną, žievelę ir sultis.",
+      "Supilk į 22 cm formą, viršų apibarstyk migdolų drožlėmis.",
+      "Kepk 170 °C 35–40 min. Patikrink pagaliuku – turi išlikti sausas.",
+      "Dar šiltą apšlakstyk šaukštu medaus, praskiesto šaukštu vandens."
+    ],
+    balance: "Didžioji dalis miltų pakeista migdolais: mažiau krakmolo, daugiau baltymų, magnio ir mononesočiųjų riebalų.",
+    note: "Jokūbo dovanų sąrašas Egipto valdytojui – tiksliai tie produktai, iš kurių iki šiol gaminami Artimųjų Rytų saldumynai."
+  },
+  {
+    id: "obuoliai-medus",
+    title: "Kepti obuoliai su medumi ir riešutais",
+    category: "saldumynai",
+    scripture: "Giesmių giesmė 2:5",
+    verse: "Sustiprinkite mane razinų pyragaičiais, atgaivinkite obuoliais.",
+    time: "45 min.",
+    servings: "4 porcijos",
+    difficulty: "Lengvas",
+    tags: ["desertas", "rudeniui", "be cukraus", "vegetariška"],
+    ingredients: [
+      "4 dideli rūgštūs obuoliai",
+      "4 v. š. medaus",
+      "60 g razinų",
+      "60 g graikinių riešutų",
+      "1 a. š. cinamono",
+      "1/4 a. š. gvazdikėlių",
+      "2 v. š. sviesto arba alyvuogių aliejaus",
+      "100 ml vynuogių sulčių"
+    ],
+    steps: [
+      "Obuoliams išimk šerdis, nepradurdamas dugno.",
+      "Razinas, kapotus riešutus, cinamoną ir gvazdikėlius sumaišyk su medumi.",
+      "Prikimšk obuolius, ant viršaus uždėk po gabalėlį sviesto.",
+      "Sudėk į kepimo indą, į dugną įpilk vynuogių sulčių.",
+      "Kepk 180 °C 35 min., du kartus apšlakstydamas susidariusiu sirupu."
+    ],
+    balance: "Keptas obuolys su riešutais: pektinas maitina žarnyno bakterijas, riešutų riebalai išlygina medaus cukrų.",
+    note: "Hebrajiškas „tapuach“ gali reikšti ir obuolį, ir abrikosą – abu tinka šiam receptui."
+  },
+  {
+    id: "migdolu-pudingas",
+    title: "Migdolų pieno pudingas su rožių vandeniu",
+    category: "saldumynai",
+    scripture: "Skaičių 17:8",
+    verse: "Aarono lazda iš Levio giminės išleido pumpurus, pražydo ir subrandino migdolus.",
+    time: "20 min. + 3 val. šaldymo",
+    servings: "4 porcijos",
+    difficulty: "Lengvas",
+    tags: ["desertas", "veganiška", "be glitimo", "švelnus"],
+    ingredients: [
+      "700 ml migdolų gėrimo (arba pieno)",
+      "50 g kukurūzų krakmolo",
+      "4 v. š. medaus arba datulių sirupo",
+      "1 a. š. rožių vandens",
+      "1 žiupsnis druskos",
+      "60 g migdolų drožlių",
+      "1 v. š. granatų sėklų puošimui"
+    ],
+    steps: [
+      "Šaltame migdolų gėrime ištirpink krakmolą, kad neliktų gumulėlių.",
+      "Kaitink ant vidutinės ugnies nuolat maišant 6–8 min., kol sutirštės.",
+      "Nukėlęs nuo ugnies įmaišyk medų, druską ir rožių vandenį.",
+      "Supilk į indelius, uždenk plėvele, kad nesusidarytų plėvelė, ir šaldyk 3 val.",
+      "Prieš patiekiant pabarstyk skrudintomis migdolų drožlėmis ir granatų sėklomis."
+    ],
+    balance: "Lengvas desertas be kiaušinių ir be pieno riebalų – tinka po sotaus šventinio stalo.",
+    note: "Migdolas hebrajiškai – „šaked“, budrusis: jis pražysta pirmas, dar žiemą. Todėl jis tapo budrumo ženklu ir šventyklos žvakidės ornamentu."
+  },
+  {
+    id: "figu-vyno-kompotas",
+    title: "Figų ir vyno kompotas su prieskoniais",
+    category: "saldumynai",
+    scripture: "1 Samuelio 30:12",
+    verse: "Jie davė jam figų pyragaičio gabalą ir dvi razinų kekes; pavalgęs jis atgavo jėgas.",
+    time: "35 min.",
+    servings: "6 porcijos",
+    difficulty: "Lengvas",
+    tags: ["desertas", "veganiška", "žiemai", "atsargoms"],
+    ingredients: [
+      "300 g džiovintų figų",
+      "100 g razinų",
+      "400 ml raudonojo vyno arba vynuogių sulčių",
+      "200 ml vandens",
+      "3 v. š. medaus",
+      "1 cinamono lazdelė",
+      "3 gvazdikėliai",
+      "2 citrinos griežinėliai"
+    ],
+    steps: [
+      "Figoms nupjaustyk kotelius, perpjauk pusiau.",
+      "Puode sumaišyk vyną, vandenį, medų ir prieskonius, užvirk.",
+      "Suberk figas ir razinas, virk ant mažos ugnies 20 min. be dangčio.",
+      "Išimk cinamono lazdelę ir gvazdikėlius.",
+      "Patiek šiltą su jogurtu arba šaltą su sūriu."
+    ],
+    balance: "Džiovinti vaisiai atgauna drėgmę ir tampa lengviau virškinami; prieskoniai mažina pilvo pūtimą, kurį gali sukelti figos.",
+    note: "Egiptietis vergas, tris dienas išbuvęs dykumoje be maisto, atsigavo nuo figų ir razinų. Tai seniausias aprašytas atvejis, kaip teisingai maitinti išsekusį žmogų."
+  },
+  {
+    id: "duonos-pudingas",
+    title: "Duonos pudingas su razinomis („kad niekas nepražūtų“)",
+    category: "saldumynai",
+    scripture: "Jono 6:12",
+    verse: "Surinkite likusius kąsnius, kad niekas nepražūtų.",
+    time: "1 val.",
+    servings: "6 porcijos",
+    difficulty: "Lengvas",
+    tags: ["desertas", "iš likučių", "vegetariška", "taupu"],
+    ingredients: [
+      "300 g pasenusios duonos",
+      "500 ml pieno",
+      "3 kiaušiniai",
+      "4 v. š. medaus",
+      "80 g razinų",
+      "1 a. š. cinamono",
+      "1 a. š. citrinos žievelės",
+      "2 v. š. sviesto",
+      "50 g migdolų"
+    ],
+    steps: [
+      "Duoną supjaustyk kubeliais, sudėk į sviestu išteptą kepimo indą.",
+      "Razinas pamirkyk šiltame vandenyje 10 min., nusausink ir pabarstyk ant duonos.",
+      "Pieną išplak su kiaušiniais, medumi, cinamonu ir žievele.",
+      "Užpilk ant duonos ir palik 20 min., kad įmirktų.",
+      "Pabarstyk migdolais ir kepk 180 °C 35 min., kol viršus paruduos."
+    ],
+    balance: "Pasenusi duona virsta pilnaverte vakariene su baltymu iš pieno ir kiaušinių – nulinės atliekos desertas.",
+    note: "Po duonos padauginimo liko dvylika pintinių trupinių. Evangelijos stebuklas baigiasi ne puota, o nurodymu nieko neišmesti."
+  },
+  {
+    id: "karobo-kremas",
+    title: "Karobo ir datulių kremas",
+    category: "saldumynai",
+    scripture: "Luko 15:16",
+    verse: "Jis geidė prikimšti pilvą ankštimis, kurias ėdė kiaulės, bet niekas jam jų neduodavo.",
+    time: "15 min.",
+    servings: "4 porcijos",
+    difficulty: "Lengvas",
+    tags: ["desertas", "veganiška", "be kepimo", "be kofeino"],
+    ingredients: [
+      "200 g datulių",
+      "4 v. š. karobo (saldžiavaisio pupmedžio) miltelių",
+      "200 ml kokosų pieno arba migdolų gėrimo",
+      "2 v. š. tahini",
+      "1 žiupsnis druskos",
+      "1/2 a. š. vanilės arba kardamono",
+      "Migdolų drožlių puošimui"
+    ],
+    steps: [
+      "Datules 10 min. mirkyk karštame vandenyje, nusausink.",
+      "Sumalk su kokosų pienu iki lygios masės.",
+      "Įmaišyk karobo miltelius, tahini, druską ir prieskonį.",
+      "Išdalyk į indelius, atšaldyk bent 30 min.",
+      "Prieš patiekiant pabarstyk migdolų drožlėmis."
+    ],
+    balance: "Karobas neturi kofeino ir teobromino, todėl tinka vaikams ir vakarienei; tahini prideda kalcio ir riebalų, kurie sotina.",
+    note: "Ankštys, kurių geidė sūnus palaidūnas, buvo būtent saldžiavaisio pupmedžio – pigiausias gyvulių pašaras, kuris šiandien virto delikatesu."
+  },
+  /* ----------------------- PAPILDOMA: DUONA IR GRŪDAI -------------------- */
+  {
+    id: "chala",
+    title: "Šabo pynutė (chala)",
+    category: "duona",
+    scripture: "Skaičių 15:20",
+    verse: "Nuo pirmosios savo tešlos aukokite papločio atnašą.",
+    time: "3 val.",
+    servings: "2 kepalai",
+    difficulty: "Vidutinis",
+    tags: ["šventinė", "šabui", "rauginta", "pinta"],
+    ingredients: [
+      "1 kg kvietinių miltų",
+      "500 ml drungno vandens",
+      "10 g sausų mielių",
+      "80 ml alyvuogių aliejaus",
+      "60 g medaus",
+      "2 kiaušiniai + 1 tepimui",
+      "2 a. š. druskos",
+      "2 v. š. sezamo arba aguonų"
+    ],
+    steps: [
+      "Mieles su medumi ištirpink vandenyje, palik 10 min.",
+      "Sumaišyk su miltais, kiaušiniais, aliejumi ir druska; minkyk 12 min.",
+      "Kildink 1,5 val., kol tešla dvigubai padidės.",
+      "Padalyk į 6 juostas, iš trijų nupink kepalą – ir taip du kartus.",
+      "Kildink dar 40 min., patepk išplaktu kiaušiniu, pabarstyk sezamu.",
+      "Kepk 180 °C 30–35 min., kol kepalas skambės tuščiai pabaksnojus į dugną."
+    ],
+    balance: "Šventinė, sodresnė duona – jos vieta savaitėje viena: šabo stalas. Riebalai ir kiaušiniai daro ją sotesnę už kasdienę.",
+    note: "Nuo pirmosios tešlos atskiriamas gabalėlis – „chala“. Iš čia ir pavadinimas: duona pavadinta ne forma, o dalimi, kuri atiduodama."
+  },
+  {
+    id: "pita",
+    title: "Pita su kišenėle",
+    category: "duona",
+    scripture: "Kunigų 23:17",
+    verse: "Atneškite iš savo namų du duonos kepalus kaip siūbuojamąją atnašą; jie tebūna iškepti su raugu.",
+    time: "2 val.",
+    servings: "8 pitos",
+    difficulty: "Vidutinis",
+    tags: ["rauginta", "kasdienė", "veganiška"],
+    ingredients: [
+      "500 g kvietinių miltų",
+      "320 ml drungno vandens",
+      "7 g sausų mielių",
+      "2 v. š. alyvuogių aliejaus",
+      "1,5 a. š. druskos",
+      "1 a. š. cukraus arba medaus"
+    ],
+    steps: [
+      "Iš visų produktų užminkyk minkštą tešlą, minkyk 10 min.",
+      "Kildink 1 val.",
+      "Padalyk į 8 rutulius, palik pailsėti 20 min., tada iškočiok 5 mm storio.",
+      "Įkaitink orkaitę su skarda iki 250 °C.",
+      "Kepk po 4–5 min. – pita turi išsipūsti kaip balionas; tada viduje susidaro kišenėlė.",
+      "Iškeptas sudėk po rankšluosčiu, kad suminkštėtų."
+    ],
+    balance: "Kišenėlė leidžia porciją valdyti: viena pita plius daržovės ir ankštiniai – subalansuoti pietūs be lėkštės.",
+    note: "Sekminėms buvo aukojama būtent rauginta duona – vienintelė proga, kai raugas ne draudžiamas, o privalomas."
+  },
+  {
+    id: "manakis",
+    title: "Isopo duonelė (manakiš)",
+    category: "duona",
+    scripture: "Patarlių 9:5",
+    verse: "Ateikite, valgykite mano duonos ir gerkite vyno, kurį sumaišiau.",
+    time: "2 val.",
+    servings: "6 duonelės",
+    difficulty: "Lengvas",
+    tags: ["pusryčiams", "veganiška", "su zaataru"],
+    ingredients: [
+      "500 g miltų",
+      "300 ml drungno vandens",
+      "7 g sausų mielių",
+      "1,5 a. š. druskos",
+      "3 v. š. alyvuogių aliejaus",
+      "6 v. š. zaataro mišinio",
+      "6 v. š. alyvuogių aliejaus užtepui"
+    ],
+    steps: [
+      "Užminkyk mielinę tešlą ir kildink 1 val.",
+      "Zaatarą sumaišyk su aliejumi iki tirštos pastos.",
+      "Tešlą padalyk į 6 dalis, iškočiok 1 cm storio papločius.",
+      "Ant kiekvieno paskleisk zaataro pastą, pirštais padaryk įdubas.",
+      "Kepk 230 °C 10–12 min., kol kraštai auksiniai."
+    ],
+    balance: "Isopas ir sezamas su alyvuogių aliejumi – Viduržemio jūros pusryčiai be cukraus; skirtingai nei saldi duona, jie nesukelia rytinio energijos kritimo.",
+    note: "Išminties namų kvietimas prie stalo Patarlių knygoje aprašytas kaip duonos ir vyno vaišės – paprasčiausias įmanomas svetingumo vaizdas."
+  },
+
+  /* ------------------- PAPILDOMA: SRIUBOS IR TROŠKINIAI ------------------ */
+  {
+    id: "avinzirniai-mangoldas",
+    title: "Avinžirnių ir mangoldo troškinys",
+    category: "troskiniai",
+    scripture: "2 Samuelio 17:28",
+    verse: "Atnešė kviečių, miežių, miltų, skrudintų grūdų, pupelių ir lęšių.",
+    time: "1 val.",
+    servings: "4 porcijos",
+    difficulty: "Lengvas",
+    tags: ["veganiška", "baltyminga", "geležis", "vieno puodo"],
+    ingredients: [
+      "300 g virtų avinžirnių",
+      "1 didelis mangoldo ryšulys (arba 300 g špinatų)",
+      "1 svogūnas, 4 česnako skiltelės",
+      "3 v. š. alyvuogių aliejaus",
+      "1 a. š. kmynų, 1 a. š. kalendros",
+      "1/2 a. š. cinamono",
+      "500 ml daržovių sultinio",
+      "2 v. š. citrinos sulčių",
+      "Druskos, pipirų"
+    ],
+    steps: [
+      "Aliejuje pakepink kapotą svogūną 8 min.",
+      "Suberk česnaką ir prieskonius, kepink 1 min.",
+      "Sudėk avinžirnius ir sultinį, virk 15 min.",
+      "Įmaišyk pjaustytą mangoldą, virk dar 8 min.",
+      "Pasūdyk, įpilk citrinos sulčių, patiek su pita."
+    ],
+    balance: "Augalinė geležis iš mangoldo ir avinžirnių pasisavinama kur kas geriau kartu su citrinos vitaminu C – todėl citrina čia ne skoniui, o naudai.",
+    note: "Dovydo stovyklos atsargų sąrašas iš esmės yra ankštinių ir grūdų sandėlis: tuo maitinosi ištisos kariuomenės."
+  },
+  {
+    id: "moliugo-sriuba",
+    title: "Moliūgų ir lęšių sriuba („mirtis puode“)",
+    category: "troskiniai",
+    scripture: "2 Karalių 4:38–41",
+    verse: "Vienas išėjo į lauką parinkti žolynų ir prisiskynė laukinių moliūgų. Jie sušuko: „Dievo žmogau, mirtis puode!“",
+    time: "50 min.",
+    servings: "6 porcijos",
+    difficulty: "Lengvas",
+    tags: ["veganiška", "rudeniui", "vieno puodo", "sotu"],
+    ingredients: [
+      "800 g moliūgo (muskatinio)",
+      "200 g raudonųjų lęšių",
+      "1 svogūnas, 3 česnako skiltelės",
+      "1,2 l daržovių sultinio",
+      "3 v. š. alyvuogių aliejaus",
+      "1 a. š. kmynų, 1/2 a. š. cinamono",
+      "1 a. š. maltos kalendros",
+      "Druskos, citrinos, skrudintų sėklų"
+    ],
+    steps: [
+      "Moliūgą supjaustyk kubeliais, svogūną sukapok.",
+      "Aliejuje pakepink svogūną ir prieskonius 6 min.",
+      "Sudėk moliūgą ir lęšius, užpilk sultiniu, virk 25 min.",
+      "Sutrink trintuvu iki vientisos sriubos, pasūdyk.",
+      "Patiek su citrinos sultimis ir skrudintomis moliūgų sėklomis."
+    ],
+    balance: "Moliūgo beta karotenas – riebaluose tirpus, todėl aliejus sriuboje būtinas jam pasisavinti.",
+    note: "Pranašo mokinys pasiskynė nuodingų laukinių moliūgų. Pamoka lieka galioti: renkant laukinius augalus reikia žinoti, ką renki."
+  },
+  {
+    id: "galilejos-zuvies-sriuba",
+    title: "Galilėjos žuvies sriuba",
+    category: "troskiniai",
+    scripture: "Luko 5:6",
+    verse: "Taip padarę, jie užgriebė didelę daugybę žuvų, ir jų tinklai pradėjo trūkinėti.",
+    time: "45 min.",
+    servings: "4 porcijos",
+    difficulty: "Vidutinis",
+    tags: ["žuvis", "omega-3", "vieno puodo"],
+    ingredients: [
+      "600 g žuvies filė ir galvų sultiniui",
+      "1 poras, 1 svogūnas",
+      "2 morkos, 2 salierų stiebai",
+      "3 česnako skiltelės",
+      "3 v. š. alyvuogių aliejaus",
+      "1 a. š. kmynų, 1 lauro lapas",
+      "1,5 l vandens",
+      "1 citrina, sauja kalendrų ar petražolių",
+      "Druskos, pipirų"
+    ],
+    steps: [
+      "Iš žuvies galvų ir uodegų su lauro lapu išvirk sultinį (25 min.), perkošk.",
+      "Aliejuje pakepink porą, svogūną, morkas ir salierą 10 min.",
+      "Užpilk perkoštu sultiniu, virk 10 min.",
+      "Sudėk gabalais pjaustytą filė ir virk 6 min. – ne ilgiau, kad žuvis neiširtų.",
+      "Pasūdyk, įspausk citrinos, pabarstyk žalumynais."
+    ],
+    balance: "Žuvies sultinys su jodu ir selenu, filė su omega-3: lengva vakarienė, po kurios nesunku miegoti.",
+    note: "Galilėjos ežere iki šiol gaudoma ta pati „šv. Petro žuvis“ – tilapija, kurią evangelijose minimi žvejai traukdavo tinklais."
+  },
+
+  /* -------------------- PAPILDOMA: DARŽOVĖS IR SALOTOS ------------------- */
+  {
+    id: "humusas",
+    title: "Avinžirnių tyrė su tahini (humusas)",
+    category: "darzoves",
+    scripture: "Rūtos 2:14",
+    verse: "Ateik čia, valgyk duonos ir pamerk kąsnį į actą.",
+    time: "20 min. (jei avinžirniai virti)",
+    servings: "6 porcijos",
+    difficulty: "Lengvas",
+    tags: ["veganiška", "baltyminga", "užkandis", "be glitimo"],
+    ingredients: [
+      "400 g virtų avinžirnių",
+      "4 v. š. tahini",
+      "3 v. š. citrinos sulčių",
+      "2 česnako skiltelės",
+      "1/2 a. š. kmynų",
+      "80–120 ml šalto vandens",
+      "3 v. š. alyvuogių aliejaus",
+      "Druskos, raudonėlio ar zaataro"
+    ],
+    steps: [
+      "Nuo avinžirnių nulupk odeles – nuo to priklauso, ar tyrė bus šilkinė.",
+      "Sumalk su česnaku, citrinos sultimis, tahini ir kmynais.",
+      "Plakdamas po šaukštą pilk šaltą vandenį, kol masė pašviesės ir taps purios.",
+      "Pasūdyk, išdėliok į lėkštę, šaukšto nugarėle padaryk įdubą.",
+      "Įpilk alyvuogių aliejaus, pabarstyk zaataru, patiek su pita."
+    ],
+    balance: "Avinžirniai su sezamo tahini – vėl grūdų ir ankštinių baltymo derinys; porcija duoda apie 9 g baltymo ir 7 g skaidulų.",
+    note: "Duonos merkimas į bendrą dubenį yra tiesiog senovinis būdas valgyti be įrankių – toks pat, koks aprašomas ir Rūtos knygoje, ir Paskutinės vakarienės scenoje."
+  },
+  {
+    id: "darzoviu-tyre",
+    title: "Keptų daržovių tyrė su tahini",
+    category: "darzoves",
+    scripture: "Patarlių 15:17",
+    verse: "Geriau daržovių valgis, kur meilė, negu nupenėtas jautis, kur neapykanta.",
+    time: "1 val.",
+    servings: "4 porcijos",
+    difficulty: "Lengvas",
+    tags: ["veganiška", "ant žarijų", "užkandis", "mažai kalorijų"],
+    ingredients: [
+      "2 baklažanai (arba 800 g moliūgo istoriškai tikslesniam variantui)",
+      "3 v. š. tahini",
+      "2 v. š. citrinos sulčių",
+      "2 česnako skiltelės",
+      "3 v. š. alyvuogių aliejaus",
+      "Druskos, kmynų",
+      "Granatų sėklų ir petražolių puošimui"
+    ],
+    steps: [
+      "Daržoves kepk ant atviros ugnies arba 220 °C orkaitėje 40 min., kol odelė apanglės, o vidus suminkštės.",
+      "Atvėsink, nulupk odelę, minkštimą palik 15 min. nuvarvėti sietelyje.",
+      "Sukapok peiliu (ne trintuvu – reikia tekstūros).",
+      "Įmaišyk tahini, česnaką, citrinos sultis, druską ir kmynus.",
+      "Patiek apšlakstytą aliejumi, su granatų sėklomis."
+    ],
+    balance: "Sotus užkandis be mėsos: apie 120 kcal porcijoje, riebalai – iš sezamo ir alyvuogių.",
+    note: "Baklažanas į Artimuosius Rytus atkeliavo po Biblijos laikų, todėl istoriškai tikslesnis variantas – keptas moliūgas ar porai. Patarlės mintis lieka ta pati: svarbiau, su kuo valgai."
+  },
+  {
+    id: "keptos-darzoves",
+    title: "Keptos daržovės su isopu ir aliejumi",
+    category: "darzoves",
+    scripture: "Pradžios 1:29",
+    verse: "Štai daviau jums kiekvieną sėklą teikiantį augalą ir kiekvieną medį, kurio vaisiuje yra sėkla – jie bus jums maistas.",
+    time: "50 min.",
+    servings: "4 porcijos",
+    difficulty: "Lengvas",
+    tags: ["veganiška", "orkaitėje", "savaitei", "skaidulos"],
+    ingredients: [
+      "2 svogūnai",
+      "3 morkos",
+      "1 moliūgo griežinys (400 g)",
+      "2 porai",
+      "1 česnako galvutė",
+      "5 v. š. alyvuogių aliejaus",
+      "1 v. š. džiovinto isopo ar čiobrelių",
+      "1 a. š. kmynų",
+      "Druskos, granatų sirupo apšlakstymui"
+    ],
+    steps: [
+      "Daržoves supjaustyk stambiais, panašaus dydžio gabalais.",
+      "Sumaišyk su aliejumi, prieskoniais ir druska.",
+      "Išdėliok vienu sluoksniu ant skardos – susigrūdusios jos garuos, o ne keps.",
+      "Kepk 200 °C 35–40 min., viduryje apversdamas.",
+      "Iškeptas apšlakstyk granatų sirupu."
+    ],
+    balance: "Viena skarda – daržovių porcijos trims dienoms. Kepimas išsaugo skaidulas ir sukoncentruoja natūralų saldumą be cukraus.",
+    note: "Pirmasis Biblijos mitybos nurodymas yra augalinis: mėsa leidžiama tik po tvano (Pr 9:3)."
+  },
+  {
+    id: "rauginti-agurkai",
+    title: "Raugintos daržovės su krapais ir česnaku",
+    category: "darzoves",
+    scripture: "Skaičių 11:5",
+    verse: "Prisimename agurkus ir melionus, porus, svogūnus ir česnakus.",
+    time: "30 min. + 5 paros",
+    servings: "3 l stiklainis",
+    difficulty: "Lengvas",
+    tags: ["veganiška", "fermentuota", "probiotikai", "atsargoms"],
+    ingredients: [
+      "1,5 kg mažų agurkų (arba ropių, morkų, kopūstų)",
+      "2 l vandens",
+      "60 g jūros druskos (3 %)",
+      "1 česnako galvutė",
+      "1 didelis krapų kuokštas su sėklomis",
+      "1 a. š. juodųjų pipirų",
+      "2 vynuogių arba vyšnios lapai (kad liktų traškūs)"
+    ],
+    steps: [
+      "Druską ištirpink vandenyje – tai 3 % sūrymas.",
+      "Agurkus nuplauk, nupjauk žiedų galiukus.",
+      "Į stiklainį sudėk krapus, česnaką, pipirus, lapus, tada agurkus.",
+      "Užpilk sūrymu, kad viską apsemtų; prispausk, kad neiškiltų.",
+      "Palik kambario temperatūroje 4–6 paras, kasdien nuleisdamas dujas, tada laikyk šaltai."
+    ],
+    balance: "Natūrali pieno rūgšties fermentacija duoda gyvų bakterijų ir vitamino K2 – tai seniausias žinomas būdas išsaugoti daržoves be šaldytuvo.",
+    note: "Sūrymas ir džiovinimas buvo vieninteliai konservavimo būdai Biblijos laikais; druska dėl to tapo sandoros ženklu (Kun 2:13)."
+  },
+
+  /* --------------------- PAPILDOMA: ŽUVIS IR MĖSA ------------------------ */
+  {
+    id: "sudyta-zuvis",
+    title: "Sūdyta ir vytinta žuvis",
+    category: "zuvis-mesa",
+    scripture: "Nehemijo 13:16",
+    verse: "Tiriečiai, gyvenantys mieste, atgabendavo žuvies ir visokių prekių.",
+    time: "30 min. + 3 paros",
+    servings: "~600 g",
+    difficulty: "Vidutinis",
+    tags: ["žuvis", "atsargoms", "be kepimo", "baltyminga"],
+    ingredients: [
+      "800 g riebios žuvies filė (skumbrės, lašišos ar karšio)",
+      "150 g stambios jūros druskos",
+      "2 v. š. medaus",
+      "1 v. š. kalendros sėklų",
+      "1 a. š. juodųjų pipirų",
+      "1 krapų kuokštas",
+      "1 citrinos žievelė",
+      "Alyvuogių aliejaus laikymui"
+    ],
+    steps: [
+      "Prieskonius sugrūsk su druska ir medumi.",
+      "Filė iš abiejų pusių storai apibarstyk mišiniu, perklok krapais.",
+      "Dėk į indą, prispausk svarmeniu ir laikyk šaldytuve 48 val., du kartus nupildamas išsiskyrusį skystį.",
+      "Nuplauk druskos perteklių, nusausink, pavytink šaldytuve ant grotelių dar 24 val.",
+      "Supjaustyk plonais griežinėliais, sudėk į stiklainį ir užpilk aliejumi."
+    ],
+    balance: "Sūdymas išsaugo omega-3 riebalų rūgštis, kurių netenkama ilgai kepant. Porcija maža – druskos kiekis didelis.",
+    note: "Magdalos miestas prie Galilėjos ežero garsėjo žuvies sūdyklomis; iš ten sūdyta žuvis keliaudavo net į Romą."
+  },
+  {
+    id: "versiuko-kepsnys",
+    title: "Nupenėto veršiuko kepsnys",
+    category: "zuvis-mesa",
+    scripture: "Luko 15:23; Pradžios 18:7",
+    verse: "Atveskite nupenėtą veršį ir papjaukite! Valgykime ir linksminkimės.",
+    time: "3 val.",
+    servings: "8 porcijos",
+    difficulty: "Sudėtingas",
+    tags: ["mėsa", "šventinė", "lėtas kepimas"],
+    ingredients: [
+      "2 kg veršienos mentės arba krūtininės",
+      "2 svogūnai, 1 česnako galvutė",
+      "4 v. š. alyvuogių aliejaus",
+      "1 v. š. kmynų, 1 v. š. kalendros",
+      "1 a. š. juodųjų pipirų",
+      "2 lauro lapai, 2 rozmarino šakelės",
+      "400 ml vandens arba sultinio",
+      "3 v. š. granatų sirupo",
+      "Stambios druskos"
+    ],
+    steps: [
+      "Mėsą įtrink druska ir prieskoniais, palik 1 val.",
+      "Įkaitintame puode su aliejumi apkepk iš visų pusių, kol susidarys ruda plutelė.",
+      "Sudėk svogūnus ir česnaką, pakepink 5 min.",
+      "Užpilk sultiniu, įmesk žoleles, uždenk ir troškink 160 °C orkaitėje 2,5 val.",
+      "Paskutines 20 min. atidenk, apšlakstyk granatų sirupu, kad paviršius blizgėtų.",
+      "Prieš pjaustant palik pailsėti 15 min."
+    ],
+    balance: "Šventinis patiekalas, ne kasdienis. Lėtas troškinimas leidžia naudoti pigesnę, jungiamojo audinio turinčią mėsą – ji tampa minkšta be papildomų riebalų.",
+    note: "Ir Abraomas svečiams, ir tėvas sugrįžusiam sūnui paskerdžia veršį. Tai didžiausias svetingumo ženklas, koks Biblijoje įmanomas."
+  },
+  {
+    id: "erienos-kukuliai",
+    title: "Ėrienos kukuliai su burghul",
+    category: "zuvis-mesa",
+    scripture: "Pradžios 27:9",
+    verse: "Nueik prie kaimenės, atnešk man du gerus ožiukus, ir aš paruošiu iš jų tavo tėvui skanėstą, kokį jis mėgsta.",
+    time: "1 val.",
+    servings: "20 kukulių",
+    difficulty: "Vidutinis",
+    tags: ["mėsa", "orkaitėje", "šventinė"],
+    ingredients: [
+      "500 g maltos ėrienos ar ožkienos",
+      "150 g smulkaus burghul",
+      "1 svogūnas",
+      "1 a. š. maltų kmynų, 1 a. š. kalendros",
+      "1/2 a. š. cinamono, 1/4 a. š. muskato",
+      "50 g kedrinių riešutų",
+      "3 v. š. alyvuogių aliejaus",
+      "Druskos, pipirų, petražolių"
+    ],
+    steps: [
+      "Burghul užpilk šaltu vandeniu 20 min., nusunk ir gerai išspausk.",
+      "Svogūną sumalk arba labai smulkiai sukapok.",
+      "Sumaišyk mėsą, burghul, svogūną, prieskonius ir druską; minkyk 5 min., kol masė taps lipni.",
+      "Formuok kiaušinio formos kukulius, į vidų įspausk po kelis kedrinius riešutus.",
+      "Sudėk ant skardos, apšlakstyk aliejumi ir kepk 200 °C 25 min.",
+      "Patiek su jogurto padažu ir petražolėmis."
+    ],
+    balance: "Grūdas mėsos masėje sumažina bendrą riebalų kiekį porcijoje ir prideda skaidulų – todėl kukuliai lengvesni nei vien mėsos.",
+    note: "Izaoko mėgstamas „skanėstas“ iš ožkienos yra pirmasis Biblijoje minimas patiekalas, paruoštas pagal konkretų žmogaus skonį."
+  },
+
+  /* ---------------------- PAPILDOMA: PIENO GĖRYBĖS ----------------------- */
+  {
+    id: "pasuku-gerimas",
+    title: "Pasukų gėrimas su isopu",
+    category: "pienas",
+    scripture: "Teisėjų 5:25",
+    verse: "Jis prašė vandens, o ji davė pieno; didingame dubenyje atnešė grietinėlės.",
+    time: "5 min.",
+    servings: "2 stiklinės",
+    difficulty: "Lengvas",
+    tags: ["pieniška", "gėrimas", "greita", "vasarai"],
+    ingredients: [
+      "400 g natūralaus jogurto",
+      "250 ml šalto vandens",
+      "1/2 a. š. druskos",
+      "1 a. š. džiovinto isopo ar mėtų",
+      "Ledukų",
+      "Agurko griežinėlių (nebūtina)"
+    ],
+    steps: [
+      "Jogurtą išplak su vandeniu iki vientisos konsistencijos.",
+      "Įmaišyk druską.",
+      "Supilk į stiklines su ledukais.",
+      "Pabarstyk isopu, įmesk agurko griežinėlį.",
+      "Gerk iškart – gėrimas greitai atsiskiria."
+    ],
+    balance: "Druska plius skystis plius pieno baltymas: karštą dieną tai atstato ir vandenį, ir prarastą natrį geriau nei grynas vanduo.",
+    note: "Jaelė Siserai vietoj vandens davė būtent rūgpienio – sotesnio ir labiau migdančio gėrimo. Pasakojimas baigiasi ne itin ramiai."
+  },
+  {
+    id: "rugpienio-sriuba",
+    title: "Rūgpienio sriuba su burghul",
+    category: "pienas",
+    scripture: "Izaijo 7:22",
+    verse: "Dėl pieno gausumo jis valgys sviestą; sviestą ir medų valgys kiekvienas, kas liks krašte.",
+    time: "40 min.",
+    servings: "4 porcijos",
+    difficulty: "Vidutinis",
+    tags: ["pieniška", "šilta", "vieno puodo", "probiotikai"],
+    ingredients: [
+      "800 g natūralaus jogurto",
+      "1 kiaušinis (kad jogurtas nesuvirtų)",
+      "1 v. š. kukurūzų krakmolo",
+      "150 g burghul arba miežinių kruopų",
+      "700 ml vandens",
+      "3 česnako skiltelės",
+      "2 v. š. sviesto arba alyvuogių aliejaus",
+      "1 v. š. džiovintų mėtų",
+      "Druskos"
+    ],
+    steps: [
+      "Burghul virk vandenyje 15 min.",
+      "Jogurtą išplak su kiaušiniu ir krakmolu – tai apsaugo nuo suvirimo.",
+      "Plona srovele, nuolat maišant, supilk jogurtą į puodą; kaitink ant mažos ugnies 10 min., bet neužvirink stipriai.",
+      "Atskirai svieste pakepink smulkintą česnaką ir mėtas 1 min.",
+      "Supilk kvapnų sviestą į sriubą, pasūdyk ir patiek karštą."
+    ],
+    balance: "Šilta fermentuoto pieno sriuba yra viena lengviausiai virškinamų sotių patiekalų – tinka atsigaunant po ligos.",
+    note: "Pranašo vaizdinys apie „sviestą ir medų“ kalba apie kraštą, kuriame liko mažai žmonių, bet daug gyvulių – maisto pakanka visiems."
+  },
+  {
+    id: "lydytas-sviestas",
+    title: "Lydytas sviestas su prieskoniais (samneh)",
+    category: "pienas",
+    scripture: "Patarlių 30:33",
+    verse: "Spaudžiant pieną, gaunamas sviestas; spaudžiant nosį, pasirodo kraujas; kurstant pyktį, kyla vaidai.",
+    time: "40 min.",
+    servings: "~350 g",
+    difficulty: "Vidutinis",
+    tags: ["pieniška", "atsargoms", "be laktozės", "kepimui"],
+    ingredients: [
+      "500 g nesūdyto sviesto",
+      "1 a. š. kalendros sėklų",
+      "1 a. š. kmynų",
+      "1 lauro lapas",
+      "1 šakelė čiobrelio ar isopo"
+    ],
+    steps: [
+      "Sviestą lėtai lydyk storadugniame puode ant mažos ugnies.",
+      "Nugriebk baltas putas nuo paviršiaus.",
+      "Kaitink 25–30 min., kol pieno baltymai nusės ant dugno ir paruduos, o riebalai taps skaidrūs kaip auksas.",
+      "Paskutines 5 min. įmesk prieskonius ir žoleles.",
+      "Perkošk per marlę į sterilų stiklainį; kambario temperatūroje laikosi mėnesius."
+    ],
+    balance: "Pašalinus pieno baltymus ir laktozę, riebalai tampa tinkami ir netoleruojantiems laktozės, o dūmų taškas pakyla iki 250 °C – galima kepti.",
+    note: "Lydytas sviestas buvo vienintelis būdas išsaugoti pieno riebalus be šaldytuvo – todėl jis minimas kaip turto ir gerovės ženklas."
+  },
+
+  /* -------------------------- PAPILDOMA: GĖRIMAI ------------------------- */
+  {
+    id: "granatu-gerimas",
+    title: "Granatų gėrimas su mėtomis",
+    category: "gerimai",
+    scripture: "Giesmių giesmė 8:2",
+    verse: "Duočiau tau gerti kvapnaus vyno, savo granatų sulčių.",
+    time: "15 min.",
+    servings: "1 l",
+    difficulty: "Lengvas",
+    tags: ["be alkoholio", "antioksidantai", "vasarai", "veganiška"],
+    ingredients: [
+      "4 granatai (arba 700 ml granatų sulčių)",
+      "300 ml šalto vandens",
+      "2 v. š. medaus",
+      "1 sauja mėtų",
+      "1/2 citrinos",
+      "Ledukų"
+    ],
+    steps: [
+      "Granatus perpjauk pusiau ir išspausk sultis citrusų spaustuvu.",
+      "Perkošk per sietelį.",
+      "Medų ištirpink šaukštelyje šilto vandens ir įmaišyk į sultis.",
+      "Įpilk šalto vandens ir citrinos sulčių.",
+      "Mėtas lengvai pagniaužyk delne, įmesk į ąsotį su ledukais."
+    ],
+    balance: "Praskiestos sultys turi perpus mažiau cukraus nei grynos, bet išlaiko visus punikalaginus – antioksidantus, kurių granate daugiau nei raudonajame vyne.",
+    note: "Granatų sultys Giesmių giesmėje minimos kaip meilės gėrimas – vienas nedaugelio Biblijos tekstų, kur maistas aprašomas vien dėl malonumo."
+  },
+  {
+    id: "figu-uzpilas",
+    title: "Figų ir miežių užpilas",
+    category: "gerimai",
+    scripture: "1 Samuelio 30:12",
+    verse: "Pavalgęs jis atgavo jėgas, nes tris dienas ir tris naktis nebuvo valgęs duonos nei gėręs vandens.",
+    time: "30 min.",
+    servings: "1 l",
+    difficulty: "Lengvas",
+    tags: ["be kofeino", "veganiška", "vakarui", "šiltas"],
+    ingredients: [
+      "6 džiovintos figos",
+      "3 v. š. miežinių grūdų",
+      "1 l vandens",
+      "1 cinamono lazdelė",
+      "3 kardamono kapsulės",
+      "1 v. š. medaus (nebūtina)"
+    ],
+    steps: [
+      "Miežius sausoje keptuvėje skrudink 8 min., kol paruduos ir kvepės riešutais.",
+      "Figas supjaustyk ketvirčiais.",
+      "Užpilk vandeniu kartu su prieskoniais, užvirk ir virk 15 min.",
+      "Palik pastovėti 10 min., perkošk.",
+      "Gerk šiltą; išvirusias figas suvalgyk su jogurtu."
+    ],
+    balance: "Gėrimas be kofeino, su natūraliu vaisių cukrumi – tinka vakarui, kai reikia šilumos, bet ne stimuliacijos.",
+    note: "Skrudintų miežių gėrimas iki šiol geriamas Viduržemio jūros regione kaip kavos pakaitalas."
+  },
+  {
+    id: "isopo-arbata",
+    title: "Isopo, mėtų ir čiobrelių arbata",
+    category: "gerimai",
+    scripture: "1 Karalių 4:33",
+    verse: "Jis kalbėjo apie medžius – nuo Libano kedro iki isopo, augančio ant sienos.",
+    time: "10 min.",
+    servings: "1 l",
+    difficulty: "Lengvas",
+    tags: ["be kofeino", "žolelės", "veganiška", "greita"],
+    ingredients: [
+      "2 v. š. džiovinto isopo (arba raudonėlio)",
+      "1 v. š. džiovintų mėtų",
+      "1 a. š. čiobrelių",
+      "1 l verdančio vandens",
+      "1 v. š. medaus",
+      "Citrinos griežinėlis"
+    ],
+    steps: [
+      "Žoleles suberk į arbatinuką.",
+      "Užpilk vandeniu, atvėsintu iki maždaug 90 °C – verdantis vanduo sunaikina eterinius aliejus.",
+      "Uždenk ir palik 7 min.",
+      "Perkošk, įmaišyk medų, kai arbata vos šilta.",
+      "Patiek su citrinos griežinėliu."
+    ],
+    balance: "Isopo ir čiobrelių karvakrolis bei timolis pasižymi antimikrobiniu poveikiu; gėrimas be kofeino tinka bet kuriam paros metui.",
+    note: "Saliamono išmintis Biblijoje matuojama gebėjimu kalbėti apie augalus – nuo didžiausio medžio iki mažiausio krūmelio virtuvėje."
+  },
+  {
+    id: "datuliu-pienas",
+    title: "Datulių pienas su cinamonu",
+    category: "gerimai",
+    scripture: "Joelio 3:18",
+    verse: "Tą dieną kalnai varvės saldų vyną, kalvomis tekės pienas.",
+    time: "10 min.",
+    servings: "2 puodeliai",
+    difficulty: "Lengvas",
+    tags: ["gėrimas", "vakarui", "be cukraus", "vaikams"],
+    ingredients: [
+      "6 datulės be kauliukų",
+      "500 ml pieno arba migdolų gėrimo",
+      "1/2 a. š. cinamono",
+      "1 žiupsnis kardamono",
+      "1 žiupsnis druskos",
+      "1 a. š. tahini (nebūtina)"
+    ],
+    steps: [
+      "Datules 10 min. mirkyk karštame piene.",
+      "Sumalk trintuvu iki vientisos masės.",
+      "Grąžink į puodą, pašildyk iki 70 °C, neužvirink.",
+      "Įmaišyk prieskonius, druską ir tahini.",
+      "Patiek šiltą, pabarstytą cinamonu."
+    ],
+    balance: "Saldumas tik iš datulių, todėl gėrime lieka kalio ir skaidulų; žiupsnis druskos sustiprina saldumo pojūtį be papildomo cukraus.",
+    note: "Pranašo vaizdinys apie pienu tekančias kalvas yra gerovės metafora – čia ji sudėta į puodelį."
+  },
+
+  /* ------------------ PAPILDOMA: PRIESKONIAI IR PADAŽAI ------------------ */
+  {
+    id: "tahini-padazas",
+    title: "Tahini padažas su citrina ir česnaku",
+    category: "prieskoniai",
+    scripture: "Izaijo 28:25",
+    verse: "Ar, išlyginęs dirvos paviršių, jis nesėja krapų, neberia kmynų?",
+    time: "10 min.",
+    servings: "300 ml",
+    difficulty: "Lengvas",
+    tags: ["veganiška", "be glitimo", "greita", "universalus"],
+    ingredients: [
+      "150 g tahini",
+      "120 ml šalto vandens",
+      "3 v. š. citrinos sulčių",
+      "1 česnako skiltelė",
+      "1/2 a. š. druskos",
+      "1/2 a. š. kmynų",
+      "Petražolių (nebūtina)"
+    ],
+    steps: [
+      "Tahini sumaišyk su citrinos sultimis – masė iš pradžių sutirštės ir sukibs, tai normalu.",
+      "Po šaukštą pilk šaltą vandenį, kiekvieną kartą gerai išmaišydamas, kol padažas pašviesės ir taps kaip grietinėlė.",
+      "Įtrink česnaką, įmaišyk druską ir kmynus.",
+      "Jei nori žalio padažo – įsuk saują petražolių.",
+      "Laikyk šaldytuve iki 5 dienų."
+    ],
+    balance: "Vienas šaukštas duoda apie 60 mg kalcio ir gerų riebalų; padažas pakeičia majonezą prie daržovių, žuvies ir blynelių.",
+    note: "Sezamo ir kmynų sėja Izaijo knygoje aprašoma kaip ūkininko išminties pavyzdys: kiekvienai sėklai – savas laikas ir būdas."
+  },
+  {
+    id: "granatu-sirupas",
+    title: "Naminis granatų sirupas",
+    category: "prieskoniai",
+    scripture: "Skaičių 13:23",
+    verse: "Jie nupjovė vynmedžio šaką su vynuogių keke ir nešė dviese ant karties, taip pat granatų ir figų.",
+    time: "1,5 val.",
+    servings: "~250 ml",
+    difficulty: "Vidutinis",
+    tags: ["veganiška", "atsargoms", "rūgštumui", "be priedų"],
+    ingredients: [
+      "2 l granatų sulčių (apie 12 granatų)",
+      "2 v. š. citrinos sulčių",
+      "2 v. š. medaus (nebūtina)"
+    ],
+    steps: [
+      "Sultis perkošk per tankų sietelį į platų puodą.",
+      "Virk ant vidutinės ugnies be dangčio 60–80 min., retkarčiais pamaišant.",
+      "Kai tūris sumažės iki maždaug ketvirtadalio, įmaišyk citrinos sultis ir medų.",
+      "Patikrink tirštumą: ant šalto šaukštelio sirupas turi likti kaip plonas medus – atvėsęs jis dar sutirštės.",
+      "Supilk į sterilų buteliuką; šaldytuve laikosi iki 6 mėn."
+    ],
+    balance: "Koncentruota rūgštis ir polifenoliai: keli lašai pakeičia druską ar cukrų, suteikdami patiekalui gylio.",
+    note: "Žvalgų atnešta granatų ir vynuogių našta buvo Pažadėtosios žemės derlingumo įrodymas – vaisiai, kuriuos reikėjo nešti dviese."
+  },
+  {
+    id: "kaparai",
+    title: "Marinuoti kaparėliai",
+    category: "prieskoniai",
+    scripture: "Koheleto 12:5",
+    verse: "Migdolas pražysta, žiogas pasidaro sunkus ir kaparėlis nebeskatina apetito.",
+    time: "30 min. + 2 savaitės",
+    servings: "1 stiklainis (300 g)",
+    difficulty: "Vidutinis",
+    tags: ["veganiška", "fermentuota", "atsargoms", "užkandis"],
+    ingredients: [
+      "300 g šviežių kaparėlių pumpurų (arba sūdytų, jei šviežių nėra)",
+      "1 l vandens sūrymui",
+      "80 g jūros druskos",
+      "200 ml vyno acto",
+      "1 a. š. kalendros sėklų",
+      "1 lauro lapas",
+      "Alyvuogių aliejaus paviršiui"
+    ],
+    steps: [
+      "Kaparėlius 3 paras mirkyk kasdien keičiamame šaltame vandenyje – taip pasišalina kartumas.",
+      "Paruošk 8 % sūrymą (80 g druskos litrui vandens), užpilk kaparėlius ir palik 10 dienų fermentuotis.",
+      "Nusunk, sudėk į stiklainį su kalendra ir lauro lapu.",
+      "Užpilk actu, praskiestu vandeniu santykiu 1:1.",
+      "Ant paviršiaus supilk šaukštą aliejaus; laikyk šaldytuve."
+    ],
+    balance: "Kaparėliai – vienas turtingiausių kvercetino šaltinių maiste; jų druskingumas leidžia sūdyti patiekalą mažiau.",
+    note: "Koheletas kaparėlį mini kaip apetito žadintoją, kuris senatvėje nustoja veikti – vienas poetiškiausių Biblijos maisto paminėjimų."
+  },
+  {
+    id: "cesnako-padazas",
+    title: "Česnakinis jogurto padažas su mėtomis",
+    category: "prieskoniai",
+    scripture: "Skaičių 11:5",
+    verse: "Prisimename svogūnus ir česnakus.",
+    time: "10 min.",
+    servings: "400 ml",
+    difficulty: "Lengvas",
+    tags: ["pieniška", "greita", "prie mėsos", "vegetariška"],
+    ingredients: [
+      "400 g graikiško jogurto",
+      "3 česnako skiltelės",
+      "1 a. š. druskos",
+      "2 v. š. citrinos sulčių",
+      "2 v. š. alyvuogių aliejaus",
+      "1 v. š. džiovintų mėtų",
+      "1/2 agurko (nebūtina)"
+    ],
+    steps: [
+      "Česnaką sutrink su druska į pastą – taip jis nebus aitrus.",
+      "Sumaišyk su jogurtu ir citrinos sultimis.",
+      "Įmaišyk mėtas ir aliejų.",
+      "Norint tirštesnio padažo, įtarkuok agurką ir išspausk jo skystį.",
+      "Palik 20 min. šaldytuve, kad skoniai susigertų."
+    ],
+    balance: "Rūgpienio padažas prie riebios mėsos padeda virškinti ir atstoja riebius aliejinius padažus – trigubai mažiau kalorijų nei majoneze.",
+    note: "Česnakas dykumoje minimas su ilgesiu: Egipto valgiai buvo prasti, bet kvapnūs. Prieskonis, dėl kurio verta gaminti."
   }
 ];

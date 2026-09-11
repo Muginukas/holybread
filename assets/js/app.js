@@ -17,6 +17,10 @@
     try { history.replaceState(null, "", value); } catch (e) { /* ignoruojam */ }
   }
 
+  /* Paieškai: nuimam diakritinius ženklus, kad „lesiai“ rastų „lęšiai“. */
+  const fold = (s) =>
+    s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
   const catName = (id) => (CATEGORIES.find((c) => c.id === id) || {}).name || id;
   const catIcon = (id) => (CATEGORIES.find((c) => c.id === id) || {}).icon || "🍽";
 
@@ -48,7 +52,7 @@
   function matches(recipe, query) {
     if (activeCategory !== "visi" && recipe.category !== activeCategory) return false;
     if (!query) return true;
-    const haystack = [
+    const haystack = fold([
       recipe.title,
       recipe.scripture,
       recipe.verse,
@@ -57,14 +61,16 @@
       catName(recipe.category),
       recipe.tags.join(" "),
       recipe.ingredients.join(" ")
-    ]
-      .join(" ")
-      .toLowerCase();
-    return query
-      .toLowerCase()
+    ].join(" "));
+    /* Lietuviškos galūnės: ilgesniems žodžiams tikrinam ir kamieną. */
+    return fold(query)
       .split(/\s+/)
       .filter(Boolean)
-      .every((word) => haystack.includes(word));
+      .every(
+        (word) =>
+          haystack.includes(word) ||
+          (word.length >= 5 && haystack.includes(word.slice(0, -2)))
+      );
   }
 
   /* ------------------------------ Kortelės ------------------------------ */
@@ -84,9 +90,13 @@
       </button>`;
   }
 
+  const catOrder = (id) => CATEGORIES.findIndex((c) => c.id === id);
+
   function render() {
     const query = search.value.trim();
-    const list = RECIPES.filter((r) => matches(r, query));
+    const list = RECIPES.filter((r) => matches(r, query)).sort(
+      (a, b) => catOrder(a.category) - catOrder(b.category)
+    );
     grid.innerHTML = list.length
       ? list.map(cardHtml).join("")
       : `<p class="empty">Tokio patiekalo receptyne nėra. Pabandyk „duona“, „lęšiai“ ar „medus“.</p>`;
@@ -133,11 +143,11 @@
   const WEEK = [
     ["Pirmadienis", ["Pusryčiai: manų paplotėliai su medumi", "Pietūs: Ezavo lęšių troškinys su maca", "Vakarienė: Egipto agurkų ir melionų salotos"]],
     ["Antradienis", ["Pusryčiai: sviestas ir medus ant Ezekielio duonos", "Pietūs: Danieliaus daržovės", "Vakarienė: labaneh su isopu ir alyvuogėmis"]],
-    ["Trečiadienis", ["Pusryčiai: figų pyragaitis ir pienas su kardamonu", "Pietūs: pupelių, sorų ir spelta sriuba", "Vakarienė: žuvis ant žarijų"]],
-    ["Ketvirtadienis", ["Pusryčiai: miežinė bandelė su datulių medumi", "Pietūs: Egipto porų troškinys", "Vakarienė: ožkų sūris, granatai, migdolai"]],
-    ["Penktadienis", ["Pusryčiai: skrudinti grūdai su actu", "Pietūs: kepta žuvis su medaus koriu", "Vakarienė (šabo išvakarės): keptos putpelės, padėtinė duona"]],
-    ["Šeštadienis (poilsis)", ["Viskas paruošta iš vakaro", "Šalti patiekalai: labaneh, alyvuogės, charosetas", "Razinų pyragaitis ir vynuogių gėrimas"]],
-    ["Sekmadienis (šventė)", ["Pusryčiai: Saros paplotėliai su zaataru", "Pietūs: Pesacho avinėlis su karčiosiomis žolelėmis", "Vakarienė: granatų ir migdolų desertas"]]
+    ["Trečiadienis", ["Pusryčiai: Tamaros blynai su datulių medumi", "Pietūs: pupelių, sorų ir spelta sriuba", "Vakarienė: žuvis ant žarijų"]],
+    ["Ketvirtadienis", ["Pusryčiai: manų blyneliai ir figų užpilas", "Pietūs: Egipto porų troškinys", "Vakarienė: ožkų sūris, granatai, migdolai"]],
+    ["Penktadienis", ["Pusryčiai: varškės blyneliai su riešutais", "Pietūs: kepta žuvis su medaus koriu", "Vakarienė (šabo išvakarės): keptos putpelės, padėtinė duona"]],
+    ["Šeštadienis (poilsis)", ["Viskas paruošta iš vakaro", "Šalti patiekalai: labaneh, alyvuogės, charosetas", "Razinų pyragaitis ir granatų gėrimas"]],
+    ["Sekmadienis (šventė)", ["Pusryčiai: Saros paplotėliai su zaataru", "Pietūs: Pesacho avinėlis su karčiosiomis žolelėmis", "Desertas: keptos figos su medumi ir riešutais"]]
   ];
 
   function renderWeek() {

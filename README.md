@@ -1,6 +1,6 @@
 # 🌾 Šventoji virtuvė — Biblijos patiekalų receptynas
 
-Statinis vieno puslapio receptynas su **37 receptais**, paremtais Šventojo Rašto minimais
+Statinis vieno puslapio receptynas su **78 receptais**, paremtais Šventojo Rašto minimais
 patiekalais ir produktais: nuo Ezekielio duonos (Ez 4:9) ir Ezavo lęšių troškinio (Pr 25) iki
 Pesacho avinėlio, figų pyragaičių ir isopo prieskonių mišinio.
 
@@ -8,8 +8,9 @@ Pesacho avinėlio, figų pyragaičių ir isopo prieskonių mišinio.
 
 - **Šventos virtuvės principai** — aštuonios Biblijos mitybos taisyklės su eilučių nuorodomis
   (septyni krašto vaisiai, kraujo draudimas, kašrutas, šabas, saikas).
-- **Receptai** — 8 kategorijos: duona ir grūdai, sriubos ir troškiniai, daržovės, žuvis ir mėsa,
-  pieno gėrybės, vaisiai ir saldumynai, gėrimai, prieskoniai ir padažai.
+- **Receptai** — 9 kategorijos: duona ir grūdai (12), blynai ir keptuvės papločiai (9),
+  sriubos ir troškiniai (8), daržovės ir salotos (7), žuvis ir mėsa (7), pieno gėrybės (6),
+  vaisiai ir saldumynai (13), gėrimai (7), prieskoniai ir padažai (9).
   Kiekvienas receptas turi: Rašto eilutę, trukmę, porcijas, produktus, gaminimo eigą,
   paaiškinimą „kodėl subalansuota“ ir istorinį komentarą.
 - **Paieška ir filtrai** — pagal pavadinimą, produktą, eilutę ar žymą (veganiška, pasninkas,
